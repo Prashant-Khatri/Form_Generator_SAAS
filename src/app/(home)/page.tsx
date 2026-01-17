@@ -1,10 +1,13 @@
-import { Button } from "@/components/ui/button";
-import Image from "next/image";
+import Footer from "@/components/Footer";
+import HeroSection from "@/components/HeroSection";
+import PricingPage from "@/components/PricingPage";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <h1>HomePage</h1>
+    <div className="grid items-center justify-items-center min-h-screen p-8 gap-16 sm:p-20">
+      <HeroSection/>
+      <PricingPage/>
+      <Footer/>
     </div>
   );
 }
